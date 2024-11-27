@@ -1,15 +1,13 @@
 # Diff-SVC(train/inference by yourself)
 ## 0.环境配置
->注意:requirements文件已更新，目前分为3个版本，可自行选择使用。\
-1. requirements.txt 是此仓库测试的原始完整环境，Torch1.12.1+cu113,可选择直接pip 或删除其中与pytorch有关的项目(torch/torchvision)后再pip，并使用自己的torch环境
+若没有安装PDM，请安装PDM包管理工具
+```shell
+pip install pdm
 ```
-pip install -r requirements.txt
+使用PDM进行依赖安装，虚拟环境可以使用conda提前创建，或者使用pdm创建的venv
+```shell
+pdm install
 ```
->2. (推荐)requirements_short.txt 是上述环境的手动整理版，不含torch本体，也可以直接
-```
-pip install -r requirements_short.txt
-```
->3. 根目录下有一份@三千整理的依赖列表requirements.png，是在某品牌云服务器上跑通的，不过此torch版本已不兼容目前版本代码,但是其他部分版本可以参考，十分感谢
 
 ## 1.推理
 >使用根目录下的inference.ipynb进行推理或使用经过作者适配的@小狼的infer.py\
