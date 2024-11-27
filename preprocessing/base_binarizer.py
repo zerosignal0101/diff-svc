@@ -46,6 +46,11 @@ class BaseBinarizer:
         self.items = {}
         # every item in self.items has some attributes
         self.item_attributes = item_attributes
+        
+        print(self.item_attributes)
+        
+        print("ITEM: Values")
+        print(self.items.values())
 
         self.load_meta_data()
         # check program correctness 检查itemdict的key只能在给定的列表中取值

@@ -1,20 +1,32 @@
+# IDE
 .idea
+.vscode
+
+# Python cache
 *.pyc
 __pycache__/
+
+# Shell scripts
 *.sh
+
+# Training or inference
+training/config.yaml
 local_tools/
 *.ckpt
 *.pth
 infer_out/
 *.onnx
-data/
 checkpoints/
-processcmd.py
-.vscode
-WPy64-38100
-Winpython64-3.8.10.0dot.exe
+
+# Data
+data/
 *.pkf
 *.wav
 *.json
 *.flac
 *.xmp
+
+# Compressed data
+*.zip
+*.7z
+*.rar

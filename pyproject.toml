@@ -1,0 +1,20 @@
+[project]
+name = "diff-svc"
+version = "0.1.1"
+description = "Default template for PDM package"
+authors = [
+    {name = "zerosignal0101", email = "zerosignal0101@proton.me"},
+]
+dependencies = ["torch==2.5.1+cu121", "torchaudio==2.5.1+cu121", "torchvision==0.20.1+cu121", "torchcrepe>=0.0.23", "torchmetrics>=1.6.0", "pytorch-lightning>=2.4.0", "praat-parselmouth>=0.4.5", "scikit-image>=0.24.0", "ipython>=8.29.0", "ipykernel>=6.29.5", "pyloudnorm>=0.1.1", "webrtcvad>=2.0.10", "h5py>=3.12.1", "einops>=0.8.0", "pycwt>=0.4.0b0", "librosa==0.9.1", "tensorboard>=2.18.0", "tensorboard-data-server>=0.7.2", "tensorboard-plugin-wit>=1.8.1"]
+requires-python = "==3.11.*"
+readme = "README.md"
+license = {text = "AGPL-3.0"}
+
+
+[tool.pdm]
+distribution = false
+
+[[tool.pdm.source]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu121"
+include_packages = ["torch", "torchvision", "torchaudio"]
